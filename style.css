@@ -1,4 +1,4 @@
-html {
+main, header {
     margin: 20px;
 }
 body {
@@ -18,6 +18,12 @@ header p {
     font-weight: bold;
     color: rgb(104, 103, 103);
 }
+/* BARRE DE RECHERCHE */
+.searchbar {
+    border: 1px solid black;
+    padding: 10px;
+}
+/* MENU */
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -37,15 +43,34 @@ nav {
 }
 
 nav a {
-    border: 1px solid black;
+    border: 3px solid rgba(245, 245, 245, 0.959);
     border-radius: 50px;
     padding: 10px;
-    
+    padding-left: 10px;
     font-weight: 800;
     margin: 20px;
 }
-.filtre {
+nav a: {
 
+}
+nav i {
+    
+    border-radius: 50%;
+    padding: 12px;
+    margin-left: -11px;
+    background-color: rgb(204, 220, 248);
+}
+.fa-circle-info {
+    color: blue;
+    margin: auto 10px;
+}
+.localisation {
+
+}
+.filtre {
+    font-weight: 800;
+    margin-top: 10px;
+    margin-left: -30px;
 }
 
 /* MAIN */
@@ -71,7 +96,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     /*width: 700px;*/
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .hebergements img {
     width: 180px;
@@ -95,7 +120,8 @@ nav a {
     background-color: whitesmoke;
     border-radius: 20px;
     margin: 10px;
-    padding: 20px;  
+    padding: 20px;
+    width: 500px;  
 }
 #populaires p {
     padding-left: 10px;
@@ -145,6 +171,7 @@ nav a {
 .activites {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     height: auto;
     width: auto;
 }
@@ -185,4 +212,29 @@ nav a {
 }
 
 /* FOOTER */
+footer {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+footer h2 {
+    margin-left: -200px;
+}
+footer li {
+    list-style: none;
+}
+footer a {
+    margin-left: -240px;
+}
+footer a:link {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+footer a:hover {
+    text-decoration: underline blue;
+}
+
 

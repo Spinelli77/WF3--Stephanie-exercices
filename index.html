@@ -7,35 +7,37 @@
     <meta name="description" content="Site de réservations de vacances de rêve"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="/style.css" rel="stylesheet">
-    <style>url @import('https://fonts.googleapis.com/css2? famille=Raleway&display=swap');</style>
+    <link href="/Reservia/style.css" rel="stylesheet">
+    <!--<style> url @import('https://fonts.googleapis.com/css2? famille=Raleway&display=swap');</style>-->
 
     <title>Reservia - Hébergements de vacances</title>
 </head>
 <body>
     <header>
         <div>
+            
             <ul class="menu">
-                <li>
+                <li class="menuresponsive">
                     <a href="#hebergements">Hébergements</a>
                 </li>
-                <li>
-                    
-                    <span><a href="#activites">Activités</a></span>
+                <li class="menuresponsive">
+                    <a href="#activites">Activités</a>
                 </li>
-                <li>
-                    <a href="#">S'inscrire</a>
-                </li>
+                <span href="#">S'inscrire</span>
             </ul>
         </div>
-        <img src="/images/logo/Reservia.svg" alt="logo du site reservia">
+        <img src="/Reservia/images/logo/Reservia.svg" alt="logo du site reservia">
         <h1>Trouvez votre hébergement pour des vacances de rêve
         </h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <div class="localisation"> 
+        <form class="localisation"> 
+            <i class="fa-solid fa-map-marker-alt"></i>
             <input id="searchbar" type="text"
             name="search" placeholder="Marseille, France">
-        </div>
+            <button class="search" type="search">
+                <i class="fa-solid fa-search"></i>
+            </button>
+        </form>
         <nav>
             <div class="filtre" href="#">Filtres</div>
             <div>
@@ -67,12 +69,16 @@
     </header>
     <main>
         <section class="hebergepop">
+
             <section id="hebergements">
                 <h2>Hébergements à Marseille</h2>
+
                 <section class="hebergements">
+
+                <div class="premierGroupe">
                     <div class="heb">
                         <div>
-                            <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Vue de la chambre avec lits superposés">
+                            <img src="/Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Vue de la chambre avec lits superposés">
                         </div>
                         <div class="hebdesc">
                             <h3>Auberge la Cannebière</h3>
@@ -98,7 +104,7 @@
                     </div>
                     <div class="heb">
                         <div>
-                            <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="vue de la chambre, lumineuse">
+                            <img src="/Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="vue de la chambre, lumineuse">
                         </div>
                         <div class="hebdesc">
                             <h3>Hôtel du port</h3>
@@ -124,7 +130,7 @@
                     </div>
                     <div class="heb">
                         <div>
-                            <img src="/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="vue de jolie chambre cozy, lit double">
+                            <img src="/Reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="vue de jolie chambre cozy, lit double">
                         </div>
                         <div class="hebdesc">
                             <h3>Hôtel Les mouettes</h3>
@@ -148,9 +154,12 @@
                             </Div>
                         </div>
                     </div>
+                </div>
+
+                <div class="secondGroupe">
                     <div class="heb">
                         <div>
-                            <img src="/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="jolie chambre décor tableau mer, bleu et blanc">
+                            <img src="/Reservia/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="jolie chambre décor tableau mer, bleu et blanc">
                         </div>
                         <div class="hebdesc">
                             <h3>Hôtel de la mer</h3>
@@ -176,7 +185,7 @@
                     </div>
                     <div  class="heb">
                         <div>
-                            <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="vue chambre lits collectifs, style ancien, auberge">
+                            <img src="/Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="vue chambre lits collectifs, style ancien, auberge">
                         </div>
                         <div class="hebdesc">
                             <h3>Auberge Le Panier</h3>
@@ -202,7 +211,7 @@
                     </div>
                     <div  class="heb">
                         <div>
-                            <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="vue chambre a coucher, deux lits simples">
+                            <img src="/Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="vue chambre a coucher, deux lits simples">
                         </div>
                         <div class="hebdesc">
                             <h3>Hôtel chez Amina</h3>
@@ -226,15 +235,19 @@
                             </Div>
                         </div>
                     </div>
+                </div>
+
                 </section>
                 <a href="#">Afficher plus</a>
             </section>
+
+
             <section id="populaires">
                 <h2>Les plus populaires</h2>
                 <section class="populaires">
                     <div class="pop">
                         <div>
-                            <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="vue chambre decor couleur vert">
+                            <img src="/Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="vue chambre decor couleur vert">
                         </div>
                         <div class="popdesc">
                             <h3>Hôtel Le soleil du matin</h3>
@@ -260,7 +273,7 @@
                     </div>
                     <div class="pop">
                         <div>
-                            <img src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre claire et spacieuse, lit double">
+                            <img src="/Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre claire et spacieuse, lit double">
                         </div>
                         <div class="popdesc">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -286,7 +299,7 @@
                     </div>
                     <div class="pop">
                         <div>
-                            <img src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche">
+                            <img src="/Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche">
                         </div>
                         <div class="popdesc">
                             <h3>Hôtel Tout bleu et Blanc</h3>
@@ -319,30 +332,30 @@
                 <h2>Activités à Marseille</h2>
                 <div class="activites">
                         <div class="vieuxport">
-                            <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                            <img src="/Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                             <p>Vieux Port</p>
                         </div>
                     <div class="fortiles">
                         <div class="fort">
-                            <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                            <img src="/Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                             <p>Fort de Pommègues</p>
                         </div>
                         <div class="iles">
-                            <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                            <img src="/Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                             <p>Îles du Frioul</p>
                         </div>
                     </div>
                         <div class="calanques">
-                            <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                            <img src="/Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                             <p>Parc National des Calanques</p>
                         </div>
                     <div class="notreparc">
                         <div class="notredame">
-                            <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                            <img src="/Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                             <p>Notre-Dame-de-la-Garde</p>
                         </div>
                         <div class="longchamp">
-                            <img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                            <img src="/Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                             <p>Parc Longchamp</p>
                         </div>
                     </div>
@@ -351,7 +364,7 @@
     </main>
     <footer>
         <div class="apropos">
-            <h2>A propos</h2>
+            <h3>A propos</h3>
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
             </ul>
@@ -363,7 +376,7 @@
             </ul>
         </div>
         <div class="noshebergements">
-            <h2>Nos hébergements</h2>
+            <h3>Nos hébergements</h3>
             <ul>
                 <li><a href="#">Charte qualité</a></li>
             </ul>
@@ -372,7 +385,7 @@
             </ul>
         </div>
         <div class="assistance">
-            <h2>Assistance</h2>
+            <h3>Assistance</h3>
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
             </ul>

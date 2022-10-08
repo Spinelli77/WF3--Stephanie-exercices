@@ -1,9 +1,9 @@
-body {
+header, main {
     font-family: 'Raleway', sans-serif;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 @media screen and (max-width: 768px) {
-    body {
+    header, main {
         padding: 0 10px;
     }
 }
@@ -242,10 +242,9 @@ nav i {
 .activites {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: auto;
-    width: 100%;
-    
+    width: 100%; 
 }
 .activites .act {
     border-radius: 20px;
@@ -254,6 +253,7 @@ nav i {
 }
 .activites img {
     width: 100%;
+    height: 150px;
     border-radius: 20px 20px 0 0;
 }
 .activites p {
@@ -283,10 +283,11 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;  
 }
 footer li {
     list-style: none;
+    line-height: 2em;
 }
 footer a:link {
     text-decoration: none;
@@ -297,6 +298,11 @@ footer a:hover {
 }
 /*++++++++++++++++++++++++++++++++++++++++ RESPONSIVE +++++++++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 /*=============================================================================================*/
                               /*FIN DE FOOTER*/

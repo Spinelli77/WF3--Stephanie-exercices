@@ -166,6 +166,11 @@ nav i {
     padding: 10px 20px;
     margin: 0 10px;
 }
+#hebergements a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 /*---------------------  VIGNETTES ----------------------------*/
 .premierGroupe, .secondGroupe {
     display: flex;
@@ -181,16 +186,27 @@ nav i {
     background-color: white;
     border: 3px solid white;
     border-radius: 20px;
+    margin: 10px; 
+}
+.pop {
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
     margin: 10px;
+}
+.heb, .pop {
+    box-shadow: 5px 5px 5px lightgray;
 }
 .hebdesc {
     margin-left: 5px;
     line-height: 20px;
 }
 .pop img {
-    width: 100%;
-    height: 5em;
-    border-radius: 20px 20px 0 0;
+    width: 100px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
 }
 /*++++++++++++++++++++++++++++++++++++++++ RESPONSIVE +++++++++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
@@ -209,16 +225,53 @@ nav i {
         flex-direction: column;
         justify-content: space-between;
     }
+    .heb img, .pop img {
+        width: 100%;
+    }
 }
 /*=============================================================================================*/
                     /*FIN DE SECTION 1-2/3 HEBERGEMENTS POPULAIRES*/
 /*---------------------------------------------------------------------------------------------*/
                              /*DEBUT DE SECTION 3/3 ACTIVITES*/
 /*=============================================================================================*/
-
-.class
+#activites {
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+}
+.activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    
+}
+.activites .act {
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+.activites img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.activites p {
+    font-weight: bold;
+}
 /*++++++++++++++++++++++++++++++++++++++++ RESPONSIVE +++++++++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
+    .activites {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .activites img {
+        width: 100%;
+    }
+    .activites p {
+        margin-left: 10px;
+    }
 }
 /*=============================================================================================*/
                               /*FIN DE SECTION 3/3 ACTIVITES*/
@@ -263,94 +316,9 @@ footer a:hover {
     
 }
 /*--------------------------*/
-/* HEBERGEMENTS*//*
-#hebergements {
-    background-color: whitesmoke;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-}
-.hebergements {
-    display: flex;
-    flex-direction: row; 
-}
 
-.hebergements img {
-    width: 100%;
-    height: 80px;
-    border-radius: 20px 20px 0 0 ;
-}
-.heb {
-    border: 3px solid white;
-    border-radius: 20px;
-    margin: 10px;
-    background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
-}
-.hebdesc {
-    
-}
-
-/*------------------------------*/
-/* POPULAIRES *//*
-#populaires {
-    background-color: whitesmoke;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 20px;
-    width: auto;  
-}
-#populaires p {
-    padding-left: 10px;
-}
-.populaires {
-    display: flex;
-    flex-direction: column;
-}
-.populaires img {
-    width: 90px;
-    height: 100%;
-    border-radius: 20px 0 0 20px ;
-}
-.pop {
-    display: flex;
-    flex-direction: row;
-    border: 3px solid white;
-    border-radius: 20px;
-    margin: 10px;
-    background-color: white; 
-}
-.popdesc {
-    /*resserrer les lignes*//*
-}
-.pop {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-/*manque les box shadows !!!*/
-/*----------------------*/
-/* EVALUATIONS *//*
-.rating-star-5 a {
-    color: darkgrey;
-    
-}
-.evaluation {
-    margin-left: 10px;
-}
-/*======================*/
 /* SECTION ACTIVITES *//*
-#activites {
-    background-color: transparent;
-    border-radius: 20px;
-    width: 100%;
-}
-.activites {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: auto;
-    width: 100%;
-}
+
 .vieuxport img, .calanques img {
     width: 200px;
     height: 250px;
